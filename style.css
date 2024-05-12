@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -25,6 +27,7 @@ header {
 .help-center {
   border-left: solid #ffffff 2px;
   padding-left: 0.75rem;
+  font-weight: 300;
 }
 
 button {
@@ -48,4 +51,57 @@ button.highlight {
   color: #ffffff;
   background-color: #4c5fd5;
   padding-inline: 1.5rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: 6rem;
+
+  background-color: #dadbf1;
+}
+
+.search h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.flex-searchbar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  width: 45rem;
+  margin: 1.5rem;
+  padding: 1.2rem 1rem;
+  font-size: 1.2rem;
+  border: solid 1px #000;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.searchbar::placeholder {
+  opacity: 0.65;
+}
+
+.searchbar:focus,
+.searchbar:hover {
+  border-color: #4c5fd5;
+}
+
+.arrow-svg {
+  width: 28px;
+  position: absolute;
+  right: 40px;
+}
+
+.searchbar:hover + .arrow-svg,
+.arrow-svg:hover {
+  fill: #4c5fd5;
 }
