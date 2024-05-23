@@ -144,3 +144,61 @@ button.highlight {
 .sub-cell a:hover {
   text-decoration: underline;
 }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding-block: 3rem;
+  padding-inline: 3.5rem;
+}
+
+footer .links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 12rem;
+}
+
+.link-container:first-child,
+.link-container:nth-child(2) {
+  margin-bottom: 2.5rem;
+}
+
+.link-container:last-of-type {
+  grid-column-start: 2;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer h4,
+.copyright-container p {
+  font-size: 1.125rem;
+  margin-bottom: 0.35rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+footer a:not(:last-child) {
+  margin-bottom: 0.35rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright-container {
+  display: grid;
+  justify-content: end;
+
+  margin-top: 2.5rem;
+}
+
+.copyright-container svg {
+  margin-bottom: 1.5rem;
+}
